@@ -45,7 +45,6 @@ const Landing = () => {
 
   const HandleSave = () => {
     setIsInput(true);
-    console.log(fields);
   };
 
   const handleAddOption = (inputField: any) => {
@@ -80,12 +79,10 @@ const Landing = () => {
                       item.id === index ? e.target.value : ""
                     );
                   }}
-                  value={item.query || values?.query}
                 />
                 <select
                   name="type"
                   id="type"
-                  value={item.type || values?.type}
                   onChange={(e) => {
                     item.type = e.target.value;
                     setFieldValue(
@@ -143,7 +140,9 @@ const Landing = () => {
           </form>
         </div>
       )}
-      {isInput && <InputGeneration />}
+      {isInput && <InputGeneration fields={fields} />}
+
+      
     </div>
   );
 };

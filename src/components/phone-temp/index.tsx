@@ -1,6 +1,4 @@
 import { useFormik } from "formik";
-import { MuiTelInput, matchIsValidTel } from "mui-tel-input";
-import InputAdornment from "@mui/material/InputAdornment";
 import PhoneInput from "react-phone-input-2";
 
 import "react-phone-input-2/lib/material.css";

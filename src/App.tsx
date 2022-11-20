@@ -1,6 +1,7 @@
 import './App.css';
 import Landing from './components/landing';
 import PhoneTemp from './components/phone-temp';
+import TestInput from './components/test-input';
 
 function App() {
 
@@ -8,7 +9,8 @@ function App() {
   return (
     <div className="App">
       {/* <Landing /> */}
-      <PhoneTemp />
+      {/* <PhoneTemp /> */}
+      <TestInput />
     </div>
   );
 }
